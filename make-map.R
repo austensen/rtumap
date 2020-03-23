@@ -7,6 +7,7 @@
 #   "leaflet",
 #   "leafpop",
 #   "leafem",
+#   "mapview",
 #   "remotes"
 # ))
 
@@ -25,6 +26,7 @@ library(leaflet)
 library(leafpop)
 library(leafem)
 library(leaflet.mapboxgl)
+library(mapview)
 
 
 # Authorizations ----------------------------------------------------------
