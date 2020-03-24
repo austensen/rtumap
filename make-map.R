@@ -22,11 +22,11 @@ library(googledrive)
 library(googlesheets4)
 library(geoclient)
 library(dotenv)
+library(mapview)
 library(leaflet)
 library(leafpop)
 library(leafem)
 library(leaflet.mapboxgl)
-library(mapview)
 
 
 # Authorizations ----------------------------------------------------------
@@ -186,7 +186,7 @@ popup_cols <- c(
 popup_options <- popupOptions()
 popup_options[["maxHeight"]] <- 400
 
-popup <- leafpop::popupTable(
+popup <- popupTable(
   all_geocoded, 
   popup_cols, 
   row.numbers = FALSE, 
